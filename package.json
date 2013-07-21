@@ -1,0 +1,34 @@
+{
+  "name": "time-window-stream",
+  "version": "0.0.0",
+  "description": "concatenate all data chunks that fall within a time window",
+  "main": "index.js",
+  "dependencies": {
+    "readable-stream": "~1.0.2"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4",
+    "through": "~2.3.4"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/substack/time-window-stream.git"
+  },
+  "homepage": "https://github.com/substack/time-window-stream",
+  "keywords": [
+    "windowed",
+    "concat",
+    "stream",
+    "timeout",
+    "through"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "license": "MIT"
+}
