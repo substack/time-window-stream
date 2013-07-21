@@ -2,6 +2,10 @@
 
 concatenate all the data chunks that fall within a time window
 
+[![testling badge](https://ci.testling.com/substack/time-window-stream.png)](https://ci.testling.com/substack/time-window-stream)
+
+[![build status](https://secure.travis-ci.org/substack/time-window-stream.png)](http://travis-ci.org/substack/time-window-stream)
+
 # example
 
 Every time there is a write on stdin, wait 1 second to buffer up more data and
