@@ -39,10 +39,14 @@ concatenated to `'jkl'` because only 0.1 seconds elapsed between them.
 var timeWindow = require('time-window-stream')
 ```
 
-## var tw = timeWindow(time)
+## var tw = timeWindow(time, opts={})
 
 Create a new time window through stream `tw` that on a write will wait `time`
 milliseconds to concatenate more writes together in the same batch.
+
+If `opts.objectMode` is `true`, `tw` will output arrays of objects with all the
+objects that were written during the time window. Otherwise, `tw` will output
+buffers with the concatenated data written during the time window.
 
 # install
 
