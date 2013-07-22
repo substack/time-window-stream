@@ -1,6 +1,6 @@
 {
   "name": "time-window-stream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "concatenate all data chunks that fall within a time window",
   "main": "index.js",
   "dependencies": {
