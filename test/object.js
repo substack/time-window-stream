@@ -5,7 +5,7 @@ var through = require('through');
 test('object mode window', function (t) {
     t.plan(1);
     
-    var tw = timeWindow({ size: 1000, objectMode: true });
+    var tw = timeWindow({ time: 1000, objectMode: true });
     var writes = [];
     tw.pipe(through(write, end));
     

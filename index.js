@@ -1,9 +1,9 @@
 var Transform = require('readable-stream/transform');
 
-module.exports = function (size, opts) {
-    if (typeof size === 'object') {
-        opts = size;
-        size = opts.size;
+module.exports = function (time, opts) {
+    if (typeof time === 'object') {
+        opts = time;
+        time = opts.time;
     }
     if (!opts) opts = {};
     var objectMode = Boolean(opts.objectMode);
@@ -25,7 +25,7 @@ module.exports = function (size, opts) {
             buffer = [];
             if (ended) tr.push(null);
             to = null;
-        }, size);
+        }, time);
         
         next();
     };
